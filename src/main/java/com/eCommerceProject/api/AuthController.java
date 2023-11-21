@@ -18,7 +18,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.mail.internet.AddressException;
+import jakarta.mail.internet.AddressException;
 import java.util.Date;
 
 @RestController

@@ -54,7 +54,7 @@ class UserServiceImplTest {
     @Test
     void getByid() {
         int id = 1;
-        userService.getByid(1);
+        userService.getById(1);
         verify(userRepository).getById(id);
     }
 

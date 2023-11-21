@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.3</version>
+		<version>3.1.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com</groupId>
@@ -14,7 +14,8 @@
 	<name>eCommerceProject</name>
 	<description>Spring Boot E Commerce Projects</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>21</java.version>
+                <exec.mainClass>com.eCommerceProject.ECommerceProjectApplication</exec.mainClass>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,6 +27,7 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
+                        <version>8.0.33</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -83,6 +85,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+	 <dependency>
+	  <groupId>net.bytebuddy</groupId>
+	  <artifactId>byte-buddy</artifactId>
+	  <version>1.14.9</version>
+	  <type>jar</type>
+	 </dependency>
+         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.1.1.Final</version>
+        </dependency>
 	</dependencies>
 
 	<build>

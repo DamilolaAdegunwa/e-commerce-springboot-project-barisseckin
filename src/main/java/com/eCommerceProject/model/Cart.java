@@ -2,7 +2,7 @@ package com.eCommerceProject.model;
 
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Data
 @NoArgsConstructor
